@@ -1,5 +1,3 @@
-require 'clearwater/component'
-
 module Components
   module Partials
     # Main Layout
