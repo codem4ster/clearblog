@@ -5,6 +5,13 @@ GIT
     clearwater-styled (0.1.0)
       clearwater (~> 1.0.0.rc1)
 
+PATH
+  remote: ../clearwater
+  specs:
+    clearwater (1.0.0.rc5)
+      bowser (~> 0.1)
+      opal (~> 0.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -62,9 +69,6 @@ GEM
       xpath (~> 2.0)
     childprocess (0.7.1)
       ffi (~> 1.0, >= 1.0.11)
-    clearwater (1.0.0.rc5)
-      bowser (~> 0.1)
-      opal (~> 0.7)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -223,7 +227,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   capybara (~> 2.13)
-  clearwater (~> 1.0.0.rc5)
+  clearwater!
   clearwater-styled!
   coffee-rails (~> 4.2)
   grand_central

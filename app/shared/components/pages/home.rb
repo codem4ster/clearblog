@@ -5,7 +5,7 @@ module Components
       include Clearwater::Component
 
       def render
-        div(id: 'home-page')
+        div id: 'home-page'
       end
     end
   end

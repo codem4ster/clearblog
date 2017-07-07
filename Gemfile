@@ -5,7 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'clearwater', '~> 1.0.0.rc5'
+# gem 'clearwater', '~> 1.0.0.rc5'
+gem 'clearwater', path: '../clearwater'
 gem 'clearwater-styled', git: 'http://github.com/clearwater-rb/clearwater-styled'
 gem 'grand_central'
 gem 'opal-rails'

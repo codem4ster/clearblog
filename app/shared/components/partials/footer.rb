@@ -5,7 +5,7 @@ module Components
       include Clearwater::Component
 
       def render
-        h1 'This is footing section'
+        h1 { 'This is footing section' }
       end
     end
   end

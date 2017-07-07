@@ -6,7 +6,7 @@ module Components
         include Clearwater::Component
 
         def render
-          h1 'Welcome to the page content'
+          h1 { 'Welcome to the page content' }
         end
       end
     end

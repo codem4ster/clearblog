@@ -8,12 +8,12 @@ module Components
       include Layoutable
 
       def render
-        div([
-              Components::Partials::Header.new,
-              h3('This is admin page 2'),
-              child,
-              Components::Partials::Footer.new
-            ])
+        div do
+          Components::Partials::Header.new
+          h3 { 'This is admin page 2' }
+          child
+          Components::Partials::Footer.new
+        end
       end
     end
   end

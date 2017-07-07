@@ -7,12 +7,13 @@ module Components
       include Clearwater::Component
       include Layoutable
 
+
       def render
-        div([
-              Components::Partials::Header.new,
-              child,
-              Components::Partials::Footer.new
-            ])
+        div do
+          render_component Components::Partials::Header.new
+          render_component child.new if child
+          Components::Partials::Footer.new.render
+        end
       end
     end
   end

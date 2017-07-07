@@ -3,7 +3,7 @@ module Layoutable
 
   attr_reader :child
 
-  def initialize(child)
+  def initialize(child = nil)
     @child = child
   end
 
